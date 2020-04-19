@@ -1,6 +1,13 @@
 
-.sq {
+nav {
+    font-family: Arial;
+    font-size: 26px;
+}
+.user {
     width: 400px;
-    height: 400px;
-    background-color: red;
+    background-color: cadetblue;
+    font-family: Arial;
+    font-size: 26px;
+    text-align: center;
+    margin-top: 5px;
 }
