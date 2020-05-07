@@ -1,11 +1,7 @@
-var test = function () {
-    console.log("Finnesko 2 test 123");
-};
-
-const renderUsers  = users => {
+const renderUsers = users => {
     let app = document.getElementById('users');
     console.log(app);
-    users.forEach(function (user) {
+    users.forEach(user => {
         let div = document.createElement('div');
         div.innerText = user.login;
         div.setAttribute('class', 'user');
@@ -14,7 +10,6 @@ const renderUsers  = users => {
 };
 
 module.exports = {
-    test: test,
     renderUsers: renderUsers
 };
 

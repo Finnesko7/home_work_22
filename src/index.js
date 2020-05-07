@@ -16,14 +16,14 @@ const api = axios.create({
     };
 
     api.post('/favorites', user).then(() => {
-        var users = api.get('/favorites').then((response) => {
-            return response;
-        }).catch( (error) => {
-            console.log(error);
-        });
+        var users = api.get('/favorites')
+            .then(response => response)
+            .catch(error => {
+                console.log(error);
+            });
 
         return users;
-    }).then((data) => {
+    }).then(data => {
         finnesko.renderUsers(data.data);
         console.log('data:', data);
     });
